@@ -1,6 +1,8 @@
 /* To learn more about this file see: https://angular.io/config/tsconfig. */
+
 {
   "compileOnSave": false,
+  "include": [ "**/*.ts", "../node_modules/angular-bootstrap-md/index.ts" ],
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
