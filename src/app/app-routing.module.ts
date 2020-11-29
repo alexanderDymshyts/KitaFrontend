@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { AktuellesComponent } from './aktuelles/aktuelles.component';
 import { UnserTeamComponent } from './unser_team/unser_team.component';
 import { UeberUnsComponent } from './ueber_uns/ueber_uns.component';
+import { DatenschutzComponent } from './datenschutz/datenschutz.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'aktuelles', component: AktuellesComponent },
   { path: 'unser-team', component: UnserTeamComponent },
   { path: 'ueber-uns', component: UeberUnsComponent }, 
+  { path: 'datenschutz', component: DatenschutzComponent },
 ];
 
 @NgModule({
