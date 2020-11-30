@@ -1,0 +1,38 @@
+div>ul>li>a{
+    color:rgb(22, 19, 19);
+  font-size: 30px;
+}
+
+//Smooth underline effect
+.nav-item {
+  position: relative;
+  color: #eba7fc;
+  cursor: pointer;
+  font-size: 24px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  }
+  .nav-item:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 0;
+  height: 10px;
+  background-color: #e084ec;
+  content: "";
+  transition: width 0.2s;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  }
+  .nav-item:hover {
+  color: #f155f7;
+  }
+  .nav-item:hover:after {
+  width: 100%;
+  }
+
+  
+  .dropdown-menu{
+    margin: 50px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 15px;
+  }
