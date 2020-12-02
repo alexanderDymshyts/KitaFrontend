@@ -1,18 +1,22 @@
 .text-nowrap {
-    white-space: nowrap!important;
-  }
+  white-space: nowrap!important;
+}
 
   footer {
-    position: absolute;
     bottom: 0;
+    left: 0;
     width: 100%;
+    height: 30em;
+    line-height: 4em;
+    position: absolute;
    }
 
 
-   tr>h5>td>a {
+   tr>h5>td>a{
     font-size: 100%;
     margin-left: auto;
     font-weight: 600;
+    padding: 10px;
     color: rgb(12, 7, 7);
     }
 
@@ -21,3 +25,9 @@
       font-family: Comic Sans MS, Comic Sans, cursive;
     }
 
+    img{
+      margin-left: auto;
+      margin-right: auto;
+    
+      margin-bottom: 30px;
+    }

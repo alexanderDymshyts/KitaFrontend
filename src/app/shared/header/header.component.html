@@ -2,15 +2,19 @@
 <!--Navbar-->
 <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark purple lighten-1" [containerInside]="false">
 
+  <div class="five">
+    <h1>BunteFarben</h1>
+  </div>
+
     <!--Image-->
-        <div class="col-lg-2 col-md-12 mb-4">
+<!--         <div class="col-lg-2 col-md-12 mb-4">
                <div class="view overlay z-depth-4-half ">
               <img src="assets/img/logo.png " class="img-fluid" alt="" >
               <a>
                   <div class="mask rgba-blue-grey-light" mdbWavesEffect></div>
               </a>
               </div>
-        </div>
+        </div> -->
 
     <!-- Collapsible content -->
     <links>
@@ -29,7 +33,7 @@
           <a dropdownToggle mdbWavesEffect type="button" class="nav-link waves-light" mdbWavesEffect>Über uns</a>
 <!--           <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light mr-3 ml-3" mdbWavesEffect>
             Über uns<span ></span></a> -->
-          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary purple lighten-1" role="menu">
             <a class="dropdown-item waves-light" mdbWavesEffect href="#">Unsere Einrichtung</a>
             <a class="dropdown-item waves-light" mdbWavesEffect href="#">Unsere Team</a>
             <a class="dropdown-item waves-light" mdbWavesEffect href="#">Unser Außengelände</a>
@@ -38,11 +42,12 @@
         </li>
       </ul>
       <!-- Links -->
-  
       <ul class="navbar-nav ml-auto nav-flex-icons">
-        <li class="nav-item">
-          <a class="nav-link">1 <mdb-icon fas icon="envelope"></mdb-icon></a>
+        <li class="nav-item avatar dropdown" dropdown>
+          <a dropdownToggle mdbWavesEffect type="button" class="btn btn-outline-light btn-lg waves-effect" mdbWavesEffect>LogiN</a>
         </li>
+      </ul>
+     <!--  <ul class="navbar-nav ml-auto nav-flex-icons">
         <li class="nav-item avatar dropdown" dropdown>
           <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
             <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" class="img-fluid rounded-circle z-depth-0"></a>
@@ -51,7 +56,7 @@
             <a class="dropdown-item waves-light" mdbWavesEffect href="#">Log out</a>
           </div>
         </li>
-      </ul>
+      </ul> -->
     </links>
     <!-- Collapsible content -->
   

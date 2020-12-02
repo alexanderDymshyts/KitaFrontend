@@ -3,7 +3,7 @@ div>ul>li>a{
   font-size: 30px;
 }
 
-//Smooth underline effect
+//Smooth underline effect 
 .nav-item {
   position: relative;
   color: #eba7fc;
@@ -30,9 +30,86 @@ div>ul>li>a{
   width: 100%;
   }
 
-  
-  .dropdown-menu{
-    margin: 50px;
-    font-family: Comic Sans MS, Comic Sans, cursive;
-    font-size: 15px;
-  }
+/* Smooth underline effect in the droptable-menu*/
+.dropdown-menu  > a {
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  position: relative;
+}
+.dropdown-menu > a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 0;
+  height: 10px;
+  background-color: #e084ec;
+  content: "";
+  transition: width 0.2s;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+.dropdown-menu> a:hover{
+  color: #aa0eaa;
+}
+.dropdown-menu > a:hover:after {
+  width: 100%;
+}
+
+//View the text "Buntefarbe kindergarten"
+.five {
+  background: purple2;
+  padding: 50px 100px 50px 170px;
+  text-align: center;
+} 
+.five h1 {
+  font-family: 'Comic Sans MS', sans-serif;
+  font-weight: 400;
+  position: relative;
+  color: #e084ec;
+  font-size: 3.5em;
+  font-weight: normal;
+  display: inline-block;
+  margin: 0;
+  line-height: 1;
+  padding: 8px 10px 8px 20px;
+  border-top: 3px solid;
+}
+.five h1:before {
+  content: "Kindergarten";
+  position: absolute;
+  top: -10px;
+  left: -180px;
+  font-size: 1em;
+  transform: rotate(-25deg);
+  font-family: 'Marck Script', cursive;
+}
+.five h1:after {
+  content: ""; 
+  position: absolute;
+  width: 120%;
+  height: 4px;
+  right: 0;
+  bottom: -4px;
+  background: #e084ec;
+}
+@media (max-width: 580px) {
+  .five {padding-left: 130px;}
+  .five h1 {font-size: 2em;}
+  .five h1:before {left: -130px;}
+}
+@media (max-width: 480px) {
+  .five {padding-left: 100px;}
+  .five h1 {
+    font-size: 1.5em;
+    padding-right: 10px;
+}
+  .five h1:before {left: -100px;}
+}
+@media (max-width: 380px) {
+  .five {padding-left: 90px;}
+  .five h1 {font-size: 1.3em;}
+  .five h1:before {left: -88px;}
+}
+
