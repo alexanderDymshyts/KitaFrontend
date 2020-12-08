@@ -1,0 +1,8 @@
+.font-medium {
+    font-size: medium;
+}
+
+.question{
+    @extend .font-medium;
+    color: purple;
+}
