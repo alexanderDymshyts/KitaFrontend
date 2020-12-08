@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AktuellesComponent } from './aktuelles/aktuelles.component';
-import { UnserTeamComponent } from './unser_team/unser_team.component';
 import { UeberUnsComponent } from './ueber_uns/ueber_uns.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
@@ -20,7 +19,6 @@ import { DatenschutzComponent } from './datenschutz/datenschutz.component';
     AppComponent,
     HomeComponent,
     AktuellesComponent,
-    UnserTeamComponent,
     UeberUnsComponent,
     FooterComponent,
     HeaderComponent,
@@ -33,6 +31,6 @@ import { DatenschutzComponent } from './datenschutz/datenschutz.component';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  schemas: [NO_ERRORS_SCHEMA]
+  schemas: [NO_ERRORS_SCHEMA],
 })
 export class AppModule { }
