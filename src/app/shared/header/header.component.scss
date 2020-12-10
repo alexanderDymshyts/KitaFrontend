@@ -1,12 +1,14 @@
-div>ul>li>a{
-    color:rgb(22, 19, 19);
-  font-size: 30px;
-}
+.btn{
+  height:50px;
+  width:100px;
+  font-size: 24px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+} 
 
-//Smooth underline effect 
+//Smooth effect Login-button
 .nav-item {
   position: relative;
-  color: #eba7fc;
+  color:white; //text color
   cursor: pointer;
   font-size: 24px;
   font-family: Comic Sans MS, Comic Sans, cursive;
@@ -18,22 +20,24 @@ div>ul>li>a{
   bottom: -10px;
   width: 0;
   height: 10px;
-  background-color: #e084ec;
+  background-color:cyan; //color the underline 
   content: "";
   transition: width 0.2s;
   font-family: Comic Sans MS, Comic Sans, cursive;
   }
-  .nav-item:hover {
-  color: #f155f7;
+  .nav-item:hover{
+    
+    color:black; //text color after cursor of login
   }
   .nav-item:hover:after {
   width: 100%;
   }
 
-/* Smooth underline effect in the droptable-menu*/
+/* Effects in the droptable-menu*/
 .dropdown-menu  > a {
+  background-color:#80deea;
   font-family: Comic Sans MS, Comic Sans, cursive;
-  color: white;
+  color: white; //text color droptable-menu
   font-size: 15px;
   cursor: pointer;
   position: relative;
@@ -42,16 +46,14 @@ div>ul>li>a{
   display: block;
   position: absolute;
   left: 0;
-  bottom: -10px;
   width: 0;
-  height: 10px;
-  background-color: #e084ec;
+  background-color: cyan ; //color underline of droptable-menu
   content: "";
   transition: width 0.2s;
   font-family: Comic Sans MS, Comic Sans, cursive;
 }
 .dropdown-menu> a:hover{
-  color: #aa0eaa;
+  color:black; //text color after cursor of droptable-menu
 }
 .dropdown-menu > a:hover:after {
   width: 100%;
@@ -67,7 +69,7 @@ div>ul>li>a{
   font-family: 'Comic Sans MS', sans-serif;
   font-weight: 400;
   position: relative;
-  color: #e084ec;
+  color:#80deea  ;
   font-size: 3.5em;
   font-weight: normal;
   display: inline-block;
@@ -92,7 +94,7 @@ div>ul>li>a{
   height: 4px;
   right: 0;
   bottom: -4px;
-  background: #e084ec;
+  background: #80deea  ;
 }
 @media (max-width: 580px) {
   .five {padding-left: 130px;}
@@ -113,9 +115,3 @@ div>ul>li>a{
   .five h1:before {left: -88px;}
 }
 
-.btn{
-  height:50px;
-  width:100px;
-  font-size: 24px;
-  font-family: Comic Sans MS, Comic Sans, cursive;
-}
