@@ -11,6 +11,7 @@ import { HeaderComponent } from './shared/header/header.component';
 
 
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { DatenschutzComponent } from './datenschutz/datenschutz.component';
 
 
 
@@ -23,6 +24,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     UeberUnsComponent,
     FooterComponent,
     HeaderComponent,
+    DatenschutzComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,6 +38,5 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
   ],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA],
-  exports: [],
-})
+
 export class AppModule { }
