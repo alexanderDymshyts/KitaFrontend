@@ -13,9 +13,6 @@ import { HeaderComponent } from './shared/header/header.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { DatenschutzComponent } from './datenschutz/datenschutz.component';
 
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,5 +35,5 @@ import { DatenschutzComponent } from './datenschutz/datenschutz.component';
   ],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA],
-
+})
 export class AppModule { }
