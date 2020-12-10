@@ -22,17 +22,17 @@
             <a dropdownToggle mdbWavesEffect type="button" class="nav-link waves-light" mdbWavesEffect>Über uns</a>
     
             <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary cyan" role="menu">
-              <a class="dropdown-item waves-light" [routerLink]="['/ueber-uns/einrichtung']"  mdbWavesEffect>Unsere Einrichtung</a>
-              <a class="dropdown-item waves-light" [routerLink]="['/ueber-uns/team']" mdbWavesEffect href="#">Unsere Team</a>
-              <a class="dropdown-item waves-light" [routerLink]="['/ueber-uns/aussengelande']"  mdbWavesEffect href="#">Unser Außengelände</a>
-              <a class="dropdown-item waves-light" [routerLink]="['/ueber-uns/ernahrung']" mdbWavesEffect href="#">Ernährung</a>
+              <a class="dropdown-item waves-light" [routerLink]="['/einrichtung']"  mdbWavesEffect>Unsere Einrichtung</a>
+              <a class="dropdown-item waves-light" [routerLink]="['/team']" mdbWavesEffect href="#">Unsere Team</a>
+              <a class="dropdown-item waves-light" [routerLink]="['/aussengelande']"  mdbWavesEffect href="#">Unser Außengelände</a>
+              <a class="dropdown-item waves-light" [routerLink]="['/ernahrung']" mdbWavesEffect href="#">Ernährung</a>
             </div>
           </div> 
         </div>
           
           <div class="navbar-nav ml-auto  nav-flex-icons">
             <div class="nav-item avatar dropdown" dropdown>
-              <a dropdownToggle mdbWavesEffect type="button" class="btn  btn-outline-light btn-lg waves-effect" mdbWavesEffect>Login</a>
+              <a dropdownToggle mdbWavesEffect type="button" class="btn btn-outline-light btn-lg waves-effect" mdbWavesEffect (click)="login()">Login</a>
             </div>
           </div>
       </links>
@@ -131,7 +131,7 @@
       <!-- Grid column -->
       <div class="col-md-3 mx-auto ">
         <!-- Content -->
-        <div class = "text">
+
         <h3 class="text-uppercase mt-3 font-weight-bold ">Betreuungs-Zeiten</h3>
         <hr class="indigo  accent-3 d-inline-block mx-auto" style="width: 200px;">
         <h4 class="text-nowrap">
@@ -139,8 +139,7 @@
           <p class="mr-3"> ist eine Buchung von 35 oder</p>
           <p class="mr-3">45 Stunden/Woche möglich.</p>
         </h4>
-      </div>
-     
+      </div>       
       <!-- Grid column -->
       <div class="col-md-3 mx-auto">
         <!-- Content -->
@@ -157,8 +156,9 @@
           </p>
         </h4> 
       </div>
+
     </div>
-    </div>
+    
     </div>
 
   <!-- Copyright -->

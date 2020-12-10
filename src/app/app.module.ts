@@ -12,6 +12,12 @@ import { HeaderComponent } from './shared/header/header.component';
 
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { DatenschutzComponent } from './datenschutz/datenschutz.component';
+import { EinrichtungComponent } from './einrichtung/einrichtung.component';
+import { TeamComponent } from './team/team.component';
+import { AussengelandeComponent } from './aussengelande/aussengelande.component';
+import { ErnahrungComponent } from './ernahrung/ernahrung.component';
+
+
 
 @NgModule({
   declarations: [
@@ -22,6 +28,10 @@ import { DatenschutzComponent } from './datenschutz/datenschutz.component';
     FooterComponent,
     HeaderComponent,
     DatenschutzComponent,
+    EinrichtungComponent,
+    TeamComponent,
+    AussengelandeComponent,
+    ErnahrungComponent,
   ],
   imports: [
     BrowserModule,
