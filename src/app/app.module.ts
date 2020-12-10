@@ -9,7 +9,9 @@ import { UeberUnsComponent } from './ueber_uns/ueber_uns.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 
+
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 
 
 
@@ -25,10 +27,15 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
   ],
-  providers: [],
+  providers: [  
+    HomeComponent,
+    AktuellesComponent,
+    UeberUnsComponent,
+  ],
   bootstrap: [AppComponent],
-  schemas: [NO_ERRORS_SCHEMA]
+  schemas: [NO_ERRORS_SCHEMA],
+  exports: [],
 })
 export class AppModule { }

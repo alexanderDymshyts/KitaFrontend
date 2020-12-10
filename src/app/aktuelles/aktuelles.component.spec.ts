@@ -23,3 +23,4 @@ describe('AktuellesComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
