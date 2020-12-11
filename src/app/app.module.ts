@@ -16,11 +16,15 @@ import { EinrichtungComponent } from './einrichtung/einrichtung.component';
 import { TeamComponent } from './team/team.component';
 import { AussengelandeComponent } from './aussengelande/aussengelande.component';
 import { ErnahrungComponent } from './ernahrung/ernahrung.component';
+import { LoginComponent } from './login/login.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 
 @NgModule({
   declarations: [
+    
     AppComponent,
     HomeComponent,
     AktuellesComponent,
@@ -32,11 +36,14 @@ import { ErnahrungComponent } from './ernahrung/ernahrung.component';
     TeamComponent,
     AussengelandeComponent,
     ErnahrungComponent,
+    LoginComponent,
   ],
   imports: [
+    
     BrowserModule,
     AppRoutingModule,
     MDBBootstrapModule.forRoot(),
+    BrowserAnimationsModule,
   ],
   providers: [  
     HomeComponent,
