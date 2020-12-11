@@ -8,6 +8,7 @@ import {EinrichtungComponent} from './einrichtung/einrichtung.component';
 import {TeamComponent} from './team/team.component';
 import {AussengelandeComponent} from './aussengelande/aussengelande.component';
 import {ErnahrungComponent} from './ernahrung/ernahrung.component'
+import {LoginComponent} from '../app/login/login.component'
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -18,7 +19,8 @@ const routes: Routes = [
   { path: 'einrichtung', component: EinrichtungComponent },
   { path: 'team', component: TeamComponent },
   { path: 'aussengelande', component: AussengelandeComponent },
-  { path: 'ernahrung', component: ErnahrungComponent }
+  { path: 'ernahrung', component: ErnahrungComponent },
+  { path: 'login', component: LoginComponent }
 ];
 
 @NgModule({
