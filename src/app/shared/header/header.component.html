@@ -1,64 +1,43 @@
-
-<!--Navbar-->
-<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark cyan" [containerInside]="false">
-
-  <div class="five">
-    <h1>BunteFarben</h1>
+<nav class="navbar navbar-expand-sm sticky-top site-header">
+  <!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top"> -->
+  <!-- Brand --> 
+  <div class="navbar-brand">
+    <h4>Kindergarten</h4>
+    <h2>BunteFarben</h2>
   </div>
+  
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler dark-toggler" type="button" data-toggle="collapse" data-target="#collapsedNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <!-- Links -->
+  <div class="collapse navbar-collapse justify-content-center" id="collapsedNav">
+    <ul class="navbar-nav header-links">
+      <li class="nav-item">
+        <a class="nav-link waves-light" [routerLink]="['/home']" mdbWavesEffect>Startseite</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" [routerLink]="['/aktuelles']" mdbWavesEffect>Aktuelles</a>
+      </li>
+  
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            Über uns
+        </a>
+        <div class="dropdown-menu dark-dropdown">
+          <a class="dropdown-item waves-light" [routerLink]="['/einrichtung']" mdbWavesEffect>Unsere Einrichtung</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item waves-light" [routerLink]="['/team']" mdbWavesEffect>Unsere Team</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item waves-light" [routerLink]="['/aussengelande']" mdbWavesEffect>Unser Außengelände</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item waves-light" [routerLink]="['/ernahrung']" mdbWavesEffect>Ernährung</a>
+        </div>
+      </li>
+    </ul>     
+  </div>  
 
-    <!--Image-->
-<!--         <div class="col-lg-2 col-md-12 mb-4">
-               <div class="view overlay z-depth-4-half ">
-              <img src="assets/img/logo.png " class="img-fluid" alt="" >
-              <a>
-                  <div class="mask rgba-blue-grey-light" mdbWavesEffect></div>
-              </a>
-              </div>
-        </div> -->
-
-    <!-- Collapsible content -->
-    <links>
-  
-      <!-- Links -->
-      <div class="navbar-nav mr-auto">
-        <div class="nav-item mr-3 ml-3 text-left">
-          <a class="nav-link waves-light" [routerLink]="['/home']" mdbWavesEffect>Startseite</a>
-        </div>
-        <div class="nav-item mr-3 ml-3 text-left">
-          <a class="nav-link waves-light" [routerLink]="['/aktuelles']" mdbWavesEffect>Aktuelles</a>
-        </div>
-  
-        <!-- Unser_team -->
-        <div class="nav-item dropdown mr-3 ml-3 text-left" dropdown>
-          <a dropdownToggle mdbWavesEffect type="button" class="nav-link waves-light" mdbWavesEffect>Über uns</a>
-<!--           <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light mr-3 ml-3" mdbWavesEffect>
-            Über uns<span ></span></a> -->
-          <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary cyan" role="menu">
-            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Unsere Einrichtung</a>
-            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Unsere Team</a>
-            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Unser Außengelände</a>
-            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Ernährung</a>
-          </div>
-        </div>
-      </div>
-      <!-- Links -->
-      <div class="navbar-nav ml-auto  nav-flex-icons">
-      <div class="nav-item avatar dropdown" dropdown>
-        <a dropdownToggle mdbWavesEffect type="button" class="btn  btn-outline-light btn-lg waves-effect" mdbWavesEffect>Login</a>
-      </div>
-      </div>
-     <!--  <ul class="navbar-nav ml-auto nav-flex-icons">
-        <li class="nav-item avatar dropdown" dropdown>
-          <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-            <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" alt="" class="img-fluid rounded-circle z-depth-0"></a>
-          <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
-            <a class="dropdown-item waves-light" mdbWavesEffect href="#">My account</a>
-            <a class="dropdown-item waves-light" mdbWavesEffect href="#">Log out</a>
-          </div>
-        </li>
-      </ul> -->
-    </links>
-    <!-- Collapsible content -->
-  
-  </mdb-navbar>
-  <!--/.Navbar-->
+  <button class="btn custom-button" onclick="window.location='/login'">Sign in</button>
+</nav> 

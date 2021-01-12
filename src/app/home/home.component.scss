@@ -83,60 +83,60 @@
 
 
  //View the text "Buntefarbe kindergarten"
-.five {
-  background: purple2;
-  padding: 50px 100px 50px 170px;
-  text-align: center;
-} 
-.five h1 {
-  font-family: 'Comic Sans MS', sans-serif;
-  font-weight: 400;
-  position: relative;
-  color:#80deea  ;
-  font-size: 3.5em;
-  font-weight: normal;
-  display: inline-block;
-  margin: 0;
-  line-height: 1;
-  padding: 8px 10px 8px 20px;
-  border-top: 3px solid;
-}
-.five h1:before {
-  content: "Kindergarten";
-  position: absolute;
-  top: -10px;
-  left: -180px;
-  font-size: 1em;
-  transform: rotate(-25deg);
-  font-family: 'Marck Script', cursive;
-}
-.five h1:after {
-  content: ""; 
-  position: absolute;
-  width: 120%;
-  height: 4px;
-  right: 0;
-  bottom: -4px;
-  background: #80deea  ;
-}
-@media (max-width: 580px) {
-  .five {padding-left: 130px;}
-  .five h1 {font-size: 2em;}
-  .five h1:before {left: -130px;}
-}
-@media (max-width: 480px) {
-  .five {padding-left: 100px;}
-  .five h1 {
-    font-size: 1.5em;
-    padding-right: 10px;
-}
-  .five h1:before {left: -100px;}
-}
-@media (max-width: 380px) {
-  .five {padding-left: 90px;}
-  .five h1 {font-size: 1.3em;}
-  .five h1:before {left: -88px;}
-}
+// .five {
+//   background: purple2;
+//   padding: 50px 100px 50px 170px;
+//   text-align: center;
+// } 
+// .five h1 {
+//   font-family: 'Comic Sans MS', sans-serif;
+//   font-weight: 400;
+//   position: relative;
+//   color:#80deea  ;
+//   font-size: 3.5em;
+//   font-weight: normal;
+//   display: inline-block;
+//   margin: 0;
+//   line-height: 1;
+//   padding: 8px 10px 8px 20px;
+//   border-top: 3px solid;
+// }
+// .five h1:before {
+//   content: "Kindergarten";
+//   position: absolute;
+//   top: -10px;
+//   left: -180px;
+//   font-size: 1em;
+//   transform: rotate(-25deg);
+//   font-family: 'Marck Script', cursive;
+// }
+// .five h1:after {
+//   content: ""; 
+//   position: absolute;
+//   width: 120%;
+//   height: 4px;
+//   right: 0;
+//   bottom: -4px;
+//   background: #80deea  ;
+// }
+// @media (max-width: 580px) {
+//   .five {padding-left: 130px;}
+//   .five h1 {font-size: 2em;}
+//   .five h1:before {left: -130px;}
+// }
+// @media (max-width: 480px) {
+//   .five {padding-left: 100px;}
+//   .five h1 {
+//     font-size: 1.5em;
+//     padding-right: 10px;
+// }
+//   .five h1:before {left: -100px;}
+// }
+// @media (max-width: 380px) {
+//   .five {padding-left: 90px;}
+//   .five h1 {font-size: 1.3em;}
+//   .five h1:before {left: -88px;}
+// }
 
 
 
@@ -225,21 +225,21 @@ h6 {
 
 //Footer
 // font-family for Kontakt & Betreuungs-zeiten
-.text-uppercase {
-  font-family: Comic Sans MS, Comic Sans, cursive;
-} 
+// .text-uppercase {
+//   font-family: Comic Sans MS, Comic Sans, cursive;
+// } 
 
-.text{
-  font-family: Comic Sans MS, Comic Sans, cursive;
-  font-size: 100%;
-}
+// .text{
+//   font-family: Comic Sans MS, Comic Sans, cursive;
+//   font-size: 100%;
+// }
 
-    img{
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: auto;
-      max-height: 50%;
-      max-width: 50%;
-      float: left; 
-    }
+//     img{
+//       margin-left: auto;
+//       margin-right: auto;
+//       margin-bottom: auto;
+//       max-height: 50%;
+//       max-width: 50%;
+//       float: left; 
+//     }
  
