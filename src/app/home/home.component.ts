@@ -8,14 +8,10 @@ import '../../styles.scss';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {   
 
-  constructor() { }
-
-  public ngOnInit() {
-  }
-
-  public login(){
-    alert('Login clicked');
-  }
+  public onArrowClick(){
+    var element = document.getElementById('mainBody');
+    element?.scrollIntoView({behavior: "smooth", block: "start", inline: "center"});
+  }  
 }
