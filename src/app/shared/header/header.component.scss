@@ -1,26 +1,26 @@
 @import '~bootstrap/scss/bootstrap.scss';
 
-$cyan: cyan;
-$grey: #737373;
-$dark: #26272b;
-$white: #fff;
+$hightlightColor: cyan;
+$secondaryTextColor: #737373;
+$backgroundColor: #26272b;
+$mainTextColor: #fff;
 
 .site-header
 {
-  background-color: $dark;
+  background-color: $backgroundColor;
   font-size:15px;
   line-height:24px;
-  color:$grey;
+  color:$secondaryTextColor;
 }
 .site-header h4 {
-  color:$white;
+  color:$mainTextColor;
   text-transform:uppercase;
   font-size:16px;
   letter-spacing:2px;
 }
 
 .site-header h2 {
-  color:$cyan;
+  color:$hightlightColor;
   font-size:18px;
   margin-top:5px;
   letter-spacing:2px;
@@ -30,12 +30,12 @@ $white: #fff;
 {
   text-align: center;
   text-transform: uppercase;
-  color:$white;
+  color:$mainTextColor;
 }
 
 .site-header a:hover
 {
-  color:$cyan;
+  color:$hightlightColor;
   text-decoration:none;
 }
 
@@ -50,11 +50,11 @@ $white: #fff;
 }
 .header-links a
 {
-  color:$white;
+  color:$mainTextColor;
 }
 .header-links a:active,.header-links a:focus,.header-links a:hover
 {
-  color:$cyan;
+  color:$hightlightColor;
   text-decoration:none;
 }
 .header-links.inline li
@@ -66,18 +66,18 @@ $white: #fff;
 {
   .site-header [class^=col-]
   {
-    margin-bottom:30px
+    margin-bottom:30px;
   }
 }
 @media (max-width:767px)
 {
   .site-header
   {
-    padding-bottom:0
+    padding-bottom:0;
   }
   .site-header 
   {
-    text-align:center
+    text-align:center;
   }
 }
 
@@ -86,9 +86,9 @@ $white: #fff;
   box-sizing: border-box;
   appearance: none;
   background-color: transparent;
-  border: 2px solid $white;
+  border: 2px solid $mainTextColor;
   border-radius: 0.6em;
-  color: $white;
+  color: $mainTextColor;
   cursor: pointer;
   display: flex;
   align-self: center;
@@ -104,20 +104,20 @@ $white: #fff;
 
   &:hover,
   &:focus {
-    color: $cyan;
+    color: $hightlightColor;
     outline: 0;
   }
 }
 
 .custom-button{
   &:hover {
-    border-color: $cyan;
-    box-shadow: 0 0 10px 0 $cyan inset, 0 0 10px 4px $cyan;
+    border-color: $hightlightColor;
+    box-shadow: 0 0 10px 0 $hightlightColor inset, 0 0 10px 4px $hightlightColor;
   }
 }
 
 .dark-toggler.navbar-toggler { 
-  border-color: $grey; 
+  border-color: $secondaryTextColor; 
 } 
 /* Setting the stroke to green using rgb values (0, 128, 0) */ 
 
@@ -126,9 +126,9 @@ $white: #fff;
 } 
 
 .dark-dropdown.dropdown-menu {
-  background-color: $dark;
+  background-color: $backgroundColor;
 }
 
 .dark-dropdown a:hover{
-  background-color: $grey;
+  background-color: $secondaryTextColor;
 }
