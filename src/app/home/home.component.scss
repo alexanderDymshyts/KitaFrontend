@@ -19,9 +19,13 @@
   left: calc(50% - 25px);
   animation: arrowDown 2s infinite;
 }
-.arrow.two {
+.arrow.one {
   opacity: 0;
   animation-delay: 1s;
+}
+.container.nice {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 @keyframes arrowDown {
   0% {
