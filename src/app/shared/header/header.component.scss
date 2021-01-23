@@ -1,117 +1,134 @@
-.btn{
-  height:50px;
-  width:100px;
-  font-size: 24px;
-  font-family: Comic Sans MS, Comic Sans, cursive;
-} 
+@import '~bootstrap/scss/bootstrap.scss';
 
-//Smooth effect Login-button
-.nav-item {
-  position: relative;
-  color:white; //text color
-  cursor: pointer;
-  font-size: 24px;
-  font-family: Comic Sans MS, Comic Sans, cursive;
-  }
-  .nav-item:after {
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  width: 0;
-  height: 10px;
-  background-color:cyan; //color the underline 
-  content: "";
-  transition: width 0.2s;
-  font-family: Comic Sans MS, Comic Sans, cursive;
-  }
-  .nav-item:hover{
-    
-    color:black; //text color after cursor of login
-  }
-  .nav-item:hover:after {
-  width: 100%;
-  }
+$hightlightColor: cyan;
+$secondaryTextColor: #737373;
+$backgroundColor: #26272b;
+$mainTextColor: #fff;
 
-/* Effects in the droptable-menu*/
-.dropdown-menu  > a {
-  background-color:#80deea;
-  font-family: Comic Sans MS, Comic Sans, cursive;
-  color: white; //text color droptable-menu
-  font-size: 15px;
-  cursor: pointer;
-  position: relative;
+.site-header
+{
+  background-color: $backgroundColor;
+  font-size:15px;
+  line-height:24px;
+  color:$secondaryTextColor;
 }
-.dropdown-menu > a:after {
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 0;
-  background-color: cyan ; //color underline of droptable-menu
-  content: "";
-  transition: width 0.2s;
-  font-family: Comic Sans MS, Comic Sans, cursive;
-}
-.dropdown-menu> a:hover{
-  color:black; //text color after cursor of droptable-menu
-}
-.dropdown-menu > a:hover:after {
-  width: 100%;
+.site-header h4 {
+  color:$mainTextColor;
+  text-transform:uppercase;
+  font-size:16px;
+  letter-spacing:2px;
 }
 
-//View the text "Buntefarbe kindergarten"
-.five {
-  background: purple2;
-  padding: 50px 100px 50px 170px;
+.site-header h2 {
+  color:$hightlightColor;
+  font-size:18px;
+  margin-top:5px;
+  letter-spacing:2px;
+}
+
+.site-header a
+{
   text-align: center;
-} 
-.five h1 {
-  font-family: 'Comic Sans MS', sans-serif;
-  font-weight: 400;
-  position: relative;
-  color:#80deea  ;
-  font-size: 3.5em;
-  font-weight: normal;
-  display: inline-block;
-  margin: 0;
-  line-height: 1;
-  padding: 8px 10px 8px 20px;
-  border-top: 3px solid;
-}
-.five h1:before {
-  content: "Kindergarten";
-  position: absolute;
-  top: -10px;
-  left: -180px;
-  font-size: 1em;
-  transform: rotate(-25deg);
-  font-family: 'Marck Script', cursive;
-}
-.five h1:after {
-  content: ""; 
-  position: absolute;
-  width: 120%;
-  height: 4px;
-  right: 0;
-  bottom: -4px;
-  background: #80deea  ;
-}
-@media (max-width: 580px) {
-  .five {padding-left: 130px;}
-  .five h1 {font-size: 2em;}
-  .five h1:before {left: -130px;}
-}
-@media (max-width: 480px) {
-  .five {padding-left: 100px;}
-  .five h1 {
-    font-size: 1.5em;
-    padding-right: 10px;
-}
-  .five h1:before {left: -100px;}
-}
-@media (max-width: 380px) {
-  .five {padding-left: 90px;}
-  .five h1 {font-size: 1.3em;}
-  .five h1:before {left: -88px;}
+  text-transform: uppercase;
+  color:$mainTextColor;
 }
 
+.site-header a:hover
+{
+  color:$hightlightColor;
+  text-decoration:none;
+}
+
+.header-links
+{
+  padding-left:0;
+  list-style:none;
+}
+.header-links li
+{
+  display:block;
+}
+.header-links a
+{
+  color:$mainTextColor;
+}
+.header-links a:active,.header-links a:focus,.header-links a:hover
+{
+  color:$hightlightColor;
+  text-decoration:none;
+}
+.header-links.inline li
+{
+  display:inline-block
+}
+
+@media (max-width:991px)
+{
+  .site-header [class^=col-]
+  {
+    margin-bottom:30px;
+  }
+}
+@media (max-width:767px)
+{
+  .site-header
+  {
+    padding-bottom:0;
+  }
+  .site-header 
+  {
+    text-align:center;
+  }
+}
+
+// Basic Button Style
+.btn {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid $mainTextColor;
+  border-radius: 0.6em;
+  color: $mainTextColor;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  &:hover,
+  &:focus {
+    color: $hightlightColor;
+    outline: 0;
+  }
+}
+
+.custom-button{
+  &:hover {
+    border-color: $hightlightColor;
+    box-shadow: 0 0 10px 0 $hightlightColor inset, 0 0 10px 4px $hightlightColor;
+  }
+}
+
+.dark-toggler.navbar-toggler { 
+  border-color: $secondaryTextColor; 
+} 
+/* Setting the stroke to green using rgb values (0, 128, 0) */ 
+
+.dark-toggler .navbar-toggler-icon { 
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+} 
+
+.dark-dropdown.dropdown-menu {
+  background-color: $backgroundColor;
+}
+
+.dark-dropdown a:hover{
+  background-color: $secondaryTextColor;
+}
