@@ -1,20 +1,74 @@
+$hightlightColor: cyan;
+$secondaryTextColor: #737373;
+$backgroundColor: #26272b;
+$mainTextColor: #fff;
 
-
-
-.card-header{
-    font-family: Raleway, sans-serif;
-    font-size: 3em;
-    background-color:  rgb(30, 236, 236);
+.view {
+    height: 100vh !important;
+    margin-top: -100px;
 }
-.card-body{
-    font-family: Raleway, sans-serif;
-    font-size: 2em;
-    background-color: cyan;
-}
-
-
 .cotainer{
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../assets/img/bunteFarben.png')no-repeat center center;
     background-size: cover;
     height: 100vh !important;
+}
+
+.modal-login {
+	width: 350px;
+	top: 35%;
+}
+.modal-login .modal-content {
+	padding: 20px;
+	border-radius: 1px;
+	border: none;
+}
+.modal-login .modal-header {
+	border-bottom: none;
+	position: relative;
+	justify-content: center;
+}
+.modal-login h4 {
+	text-align: center;
+	font-size: 26px;
+}
+.modal-login .form-group {
+	margin-bottom: 20px;
+}
+.modal-login .form-control, .modal-login .btn {
+	min-height: 40px;
+	border-radius: 30px; 
+	font-size: 15px;
+	transition: all 0.5s;
+}
+.modal-login .form-control {
+	font-size: 13px;
+}
+.modal-login .form-control:focus {
+	border-color: $hightlightColor;
+}
+.modal-login .hint-text {
+	text-align: center;
+	padding-top: 10px;
+	font-size:16px;
+	letter-spacing:1px;
+}
+.modal-login .btn, .modal-login .btn:active {
+	border: none;
+	background: $backgroundColor !important;
+	line-height: normal;
+}
+.modal-login .btn:hover, .modal-login .btn:focus {
+	border-color: $hightlightColor;
+	box-shadow: 0 0 10px 0 $hightlightColor inset, 0 0 10px 4px $hightlightColor;
+	color: $hightlightColor;
+}
+.modal-login .hint-text a {
+	color: $secondaryTextColor;
+}
+.modal-login .hint-text a:hover{
+	color: $hightlightColor;
+}
+.trigger-btn {
+	display: inline-block;
+	margin: 100px auto;
 }
