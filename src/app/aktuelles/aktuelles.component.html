@@ -6,15 +6,3 @@
     [date]="actuell.date"
     [image]="actuell.image"></app-card>
 </div>
-
-<app-card 
-[id]="'test'" 
-[title]="'test'" 
-[text]="'test'" 
-[image]="'test'"></app-card>
-
-<ul>
-  <li *ngFor="let actuel of actuelles$ | async">
-     {{ actuel.title }}  {{ actuel.text }}
-  </li>
-</ul>
