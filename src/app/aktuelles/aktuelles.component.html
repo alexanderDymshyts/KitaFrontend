@@ -1,8 +1,7 @@
-<div *ngFor="let actuell of actuelles$ | async"> 
-  <app-card 
-    [id]="actuell.id" 
-    [title]="actuell.title" 
-    [text]="actuell.text" 
-    [date]="actuell.date"
-    [image]="actuell.image"></app-card>
+<div *ngIf="actuelles$">
+  <div *ngFor="let actuell of actuelles$ | async"> 
+    <app-card    
+      [card]="actuell">
+    </app-card>
+  </div>
 </div>
