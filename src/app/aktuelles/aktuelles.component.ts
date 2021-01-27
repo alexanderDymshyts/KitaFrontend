@@ -17,6 +17,8 @@ export class AktuellesComponent implements OnInit {
       { id: "tMot06", title: "Supreme", text: "test2", date: new Date(), image: 'c://temp1.jpg' },
       { id: "x9sD3g", title: "Sizzler", text: "test3", date: new Date(), image: 'c://temp2.jpg' },
       { id: "x9sD3g", title: "SizTertererzler", text: "test4", date: new Date(), image: 'c://temp4.jpg' },
+      { id: "x9sD3g", title: "Sizzltrutzuer", text: "test5", date: new Date(), image: 'c://temp6.jpg' },
+      { id: "x9sD3g", title: "Sizrzler", text: "test6", date: new Date(), image: 'c://temp7.jpg' },
     ]);
   }
 
