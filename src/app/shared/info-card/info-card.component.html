@@ -1,13 +1,18 @@
 <div *ngIf="card">
-    <div class="container-fluid ">
-        <div class="card columns">
-           <div class="card">
+  
+    <div class="container-fluid">
+        <div class="card columns text-white ">
+           <div class="card" style="width:25rem;">
                <div class="card-header text-center text-uppercase display-5 text-md-left font-italic ml-5">{{card.title}}</div>
                <div class="card-body text-md-left ml-5 lead font-medium">
-                   <p class="card-text  p-3">{{card.text}}</p>
+                   <p class="card-text ellipsis ">{{card.text}}</p>
+                  
                </div>
-               <div class="card-footer text-md-left ml-5 lead ">{{card.date}}</div>
+               <div class="card-footer text-md-left ml-5 lead "><p>{{card.date}}</p>
+                <a href="#" class="btn btn-primary float-right">more..</a>
+               </div>
            </div>
         </div>
       </div> 
+    
 </div>
