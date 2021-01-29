@@ -1,18 +1,54 @@
-<div *ngIf="card">
+<!-- <div *ngIf="card">
   
     <div class="container-fluid">
-        <div class="card columns text-white ">
-           <div class="card" style="width:25rem;">
-               <div class="card-header text-center text-uppercase display-5 text-md-left font-italic ml-5">{{card.title}}</div>
-               <div class="card-body text-md-left ml-5 lead font-medium">
-                   <p class="card-text ellipsis ">{{card.text}}</p>
+        <div class="card columns">
+           <div class="card ">
+               <div class="card-header text-center text-uppercase display-6 text-md-left font-italic ">{{card.title}}</div>
+               <div class="card-body text-md-left font-medium">
+                   <p class="card-text ">{{card.text}}</p>
                   
                </div>
-               <div class="card-footer text-md-left ml-5 lead "><p>{{card.date}}</p>
-                <a href="#" class="btn btn-primary float-right">more..</a>
+               <div class="card-footer text-md-left"><p>{{card.date}}</p>
                </div>
            </div>
         </div>
       </div> 
     
-</div>
+</div> -->
+
+
+<section id="team" class="pb-5">
+    <div class="container">
+       
+        <div class="row">
+            <!--CARD-->
+            <div *ngIf="card">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid"></p>
+                                    <h4 class="card-title">{{card.title}}</h4>
+                                    <a href="#" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">{{card.title}}</h4>
+                                    <p class="card-text">{{card.text}}</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- ./CARD-->
+        </div>
+    </div>
+</section>
