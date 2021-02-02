@@ -19,6 +19,7 @@ import { ErnahrungComponent } from './ernahrung/ernahrung.component';
 import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InfoCardComponent } from './shared/info-card/info-card.component';
+import { ImpressumComponent } from './impressum/impressum.component';
 
 
 
@@ -38,6 +39,7 @@ import { InfoCardComponent } from './shared/info-card/info-card.component';
     ErnahrungComponent,
     LoginComponent,
     InfoCardComponent,
+    ImpressumComponent,
   ],
   imports: [
     
