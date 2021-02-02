@@ -4,10 +4,11 @@
 
 .question{
     @extend .font-medium;
-    color: cyan;
+    font-weight: bold;
 }
 
 .container.nice {
     margin-top: 15px;
     margin-bottom: 15px;
+    color:#64485c;
   }

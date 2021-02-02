@@ -18,13 +18,14 @@ import { AussengelandeComponent } from './aussengelande/aussengelande.component'
 import { ErnahrungComponent } from './ernahrung/ernahrung.component';
 import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { InfoCardComponent } from './shared/info-card/info-card.component';
+import { ImpressumComponent } from './impressum/impressum.component';
 
 
 
 
 @NgModule({
-  declarations: [
-    
+  declarations: [    
     AppComponent,
     HomeComponent,
     AktuellesComponent,
@@ -37,6 +38,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AussengelandeComponent,
     ErnahrungComponent,
     LoginComponent,
+    InfoCardComponent,
+    ImpressumComponent,
   ],
   imports: [
     

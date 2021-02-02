@@ -1,0 +1,18 @@
+
+  <div class="container nice">
+    <div class="card border-0 shadow">
+        <div class="card-body">
+
+          <div *ngIf="actuelles$">
+            <h5 class="display-1 font-italic ml-5 title"style="text-align: center; color: #64485c; ">AKTUELLE NACHRICHTEN</h5>
+            <div class="card-group" >
+            
+              <div *ngFor="let actuell of actuelles$ | async">              
+                <app-card [card]="actuell">
+                </app-card>     
+              </div>
+            </div>        
+          </div>
+        </div>
+  </div> 
+</div>
