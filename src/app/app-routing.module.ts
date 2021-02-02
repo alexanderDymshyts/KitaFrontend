@@ -20,7 +20,7 @@ const routes: Routes = [
   { path: 'team', component: TeamComponent },
   { path: 'aussengelande', component: AussengelandeComponent },
   { path: 'ernahrung', component: ErnahrungComponent },
-  { path: 'login', component: LoginComponent }
+  { path: 'login', component: LoginComponent },
 ];
 
 @NgModule({

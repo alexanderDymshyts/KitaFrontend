@@ -1,0 +1,35 @@
+
+
+<section id="message" class="pb-5">
+    <div class="container">
+       
+        <div class="row">
+            <div *ngIf="card">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip">
+                    <div class="mainflip">
+                        <div class="frontside" >
+                            <div class="card">
+                                <div class="card-body text-center" >
+                                    <p><img class=" img-fluid"></p>
+                                    <h4 class="card-title">{{card.title}}</h4>
+                                    <a href="#" style=" color: #85dcba; font-size: 15px;"><i class="fa fa-plus"></i> Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">{{card.title}}</h4>
+                                    <p class="card-text" style=" color: #64485c; font-size: 20px; text-align: left;" >{{card.text}}</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
