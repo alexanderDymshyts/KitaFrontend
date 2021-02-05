@@ -1,8 +1,8 @@
 import { Component, Input } from "@angular/core";
-import { IActuell } from "../interfaces/actuell";
+import { IActuell } from "../../interfaces/actuell";
 
 @Component({
-    selector: 'app-card',
+    selector: 'info-card',
     templateUrl: './info-card.component.html',
     styleUrls: ['./info-card.component.scss'],
 })

@@ -18,7 +18,7 @@ import { AussengelandeComponent } from './aussengelande/aussengelande.component'
 import { ErnahrungComponent } from './ernahrung/ernahrung.component';
 import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { InfoCardComponent } from './shared/info-card/info-card.component';
+import { InfoCardComponent } from './shared/cards/info-card/info-card.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 
 
