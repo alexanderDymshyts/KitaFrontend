@@ -1,4 +1,5 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
+import { IPersonal } from "../../interfaces/personal";
 
 @Component({
     selector: 'profile-card',
@@ -7,5 +8,11 @@ import { Component } from "@angular/core";
 })
 
 export class ProfileCardComponent {
+    @Input() public member: IPersonal | undefined;
 
+    constructor(){}
+
+    // public makeUrlFromBlob(blob: Blob) {
+    //     return URL.createObjectURL(blob);
+    // }
 }

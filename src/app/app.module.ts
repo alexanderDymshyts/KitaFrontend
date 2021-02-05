@@ -20,9 +20,7 @@ import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InfoCardComponent } from './shared/cards/info-card/info-card.component';
 import { ImpressumComponent } from './impressum/impressum.component';
-
-
-
+import { ProfileCardComponent } from './shared/cards/profile-card/profile-card.component';
 
 @NgModule({
   declarations: [    
@@ -40,6 +38,7 @@ import { ImpressumComponent } from './impressum/impressum.component';
     LoginComponent,
     InfoCardComponent,
     ImpressumComponent,
+    ProfileCardComponent,
   ],
   imports: [
     

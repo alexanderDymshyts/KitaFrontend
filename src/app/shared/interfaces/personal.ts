@@ -2,6 +2,8 @@ export interface IPersonal {
     id: string;
     firstName: string;
     lastName: string;
-    about: string;
-    avatar: Blob;
+    position: string;
+    phone: string;
+    email: string;
+    //avatar: Blob;
 }
