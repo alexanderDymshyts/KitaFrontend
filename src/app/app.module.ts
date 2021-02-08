@@ -47,11 +47,7 @@ import { ProfileCardComponent } from './shared/cards/profile-card/profile-card.c
     MDBBootstrapModule.forRoot(),
     BrowserAnimationsModule,
   ],
-  providers: [  
-    HomeComponent,
-    AktuellesComponent,
-    UeberUnsComponent,
-  ],
+  providers: [ ],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA],
 })
