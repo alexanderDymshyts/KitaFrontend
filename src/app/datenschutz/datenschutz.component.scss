@@ -1,3 +1,5 @@
+@import '../app.component.scss';
+
 .font-medium {
     font-size: medium;
 }
@@ -10,5 +12,5 @@
 .container.nice {
     margin-top: 15px;
     margin-bottom: 15px;
-    color:#64485c;
+    color:$hightlightColor;
   }

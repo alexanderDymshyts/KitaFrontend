@@ -1,1 +1,6 @@
-@import '../datenschutz/datenschutz.component.scss';
+@import '../app.component.scss';
+
+.main-body {
+    color: $hightlightColor;
+    background-image: url('../../assets/img/food.png');
+}

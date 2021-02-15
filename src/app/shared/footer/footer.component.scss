@@ -1,9 +1,4 @@
-@import '~bootstrap/scss/bootstrap.scss';
-
-$hightlightColor: #64485c;
-$secondaryTextColor: #85dcba;
-$backgroundColor: #41b3a3;
-$mainTextColor: #85dcba;
+@import '../../app.component.scss';
 
 .site-footer
 {
@@ -15,7 +10,7 @@ $mainTextColor: #85dcba;
 }
 .site-footer hr
 {
-  border-top-color:#bbb;
+  border-top-color: $topBorderColor;
   opacity:0.5
 }
 .site-footer hr.small
