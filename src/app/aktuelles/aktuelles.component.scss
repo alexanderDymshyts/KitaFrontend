@@ -1,1 +1,11 @@
 @import '../app.component.scss';
+
+h5{
+    color: $hightlightColor;
+    text-align: center;
+}
+
+.container.nice {
+    margin-top: 15px;
+    margin-bottom: 15px;  
+}
