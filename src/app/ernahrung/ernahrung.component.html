@@ -21,7 +21,7 @@
               </ol>
              
               <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div *ngIf="monday" class="carousel-item active">
                   <img class="d-block w-100" src="../../assets/img/menu.png" alt="Montag">
                   <div class="carousel-caption d-none d-md-block">
                     <h1>Montag</h1>
@@ -35,7 +35,7 @@
                     <h2>Mittagessen: {{monday.lunch}}</h2>
                   </div>
                 </div>
-                <div class="carousel-item">
+                <div *ngIf="tuesday" class="carousel-item">
                   <img class="d-block w-100" src="../../assets/img/menu.png" alt="Dienstag">
                   <div class="carousel-caption d-none d-md-block">
                     <h1>Dienstag</h1>
