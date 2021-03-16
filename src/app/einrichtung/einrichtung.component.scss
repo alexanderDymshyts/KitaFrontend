@@ -1,1 +1,21 @@
 @import '../app.component.scss';
+
+.container.nice {
+    color: $hightlightColor;
+    margin-top: 15px;
+    margin-bottom: 15px;  
+}
+
+h1 {
+    color: $hightlightColor;
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+h2 {
+    color: $hightlightColor;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+}
