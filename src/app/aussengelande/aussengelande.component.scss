@@ -1,1 +1,65 @@
 @import '../app.component.scss';
+
+.container.nice {
+    color: $hightlightColor;
+    margin-top: 15px;
+    margin-bottom: 15px;  
+}
+
+h1 {
+    color: $hightlightColor;
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+h2 {
+    color: $hightlightColor;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.carousel{
+    height: 650px;
+}
+
+.carousel-control-prev-icon  {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2364485c' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    height: 50px;
+    width: 50px;
+}
+   
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2364485c' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+    height: 50px;
+    width: 50px;
+}
+
+ol.carousel-indicators {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+  }
+  
+  ol.carousel-indicators li,
+  ol.carousel-indicators li.active {
+    float: left;
+    width: 20%;
+    height: 10px;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+    background: transparent;
+  }
+  
+  ol.carousel-indicators li.active {
+    background: $hightlightColor;
+  }
+
+img {   
+    height: 650px;
+}
