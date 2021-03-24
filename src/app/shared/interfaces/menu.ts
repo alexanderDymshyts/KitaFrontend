@@ -5,6 +5,6 @@ export interface IMenu {
     date: Date;
     dayOfTheWeek: WeekDay;
     lunch: string;
-    snak: string;
+    snack: string;
     breakfast: string;
 }

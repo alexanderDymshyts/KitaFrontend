@@ -21,6 +21,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InfoCardComponent } from './shared/cards/info-card/info-card.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { ProfileCardComponent } from './shared/cards/profile-card/profile-card.component';
+import { ErnahrungService } from './ernahrung/ernahrung.service';
+import { TeamService } from './team/team.service';
+import { BaseRequestService } from './shared/services/base-requests.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [    
@@ -41,13 +45,13 @@ import { ProfileCardComponent } from './shared/cards/profile-card/profile-card.c
     ProfileCardComponent,
   ],
   imports: [
-    
+    HttpClientModule, 
     BrowserModule,
     AppRoutingModule,
     MDBBootstrapModule.forRoot(),
     BrowserAnimationsModule,
   ],
-  providers: [ ],
+  providers: [ ErnahrungService, TeamService, BaseRequestService ],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA],
 })
