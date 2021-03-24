@@ -31,7 +31,4 @@ export class ErnahrungComponent implements OnInit {
         this.friday = menus.find(menu => menu.dayOfTheWeek === WeekDay.Friday);     
     })).subscribe();   
   }
-
-  
-
 }
