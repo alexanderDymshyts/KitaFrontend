@@ -10,6 +10,7 @@ import {AussengelandeComponent} from './aussengelande/aussengelande.component';
 import {ErnahrungComponent} from './ernahrung/ernahrung.component'
 import {LoginComponent} from '../app/login/login.component'
 import { GroupsComponent } from './groups/groups.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -26,7 +27,10 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [
+    RouterModule.forRoot(routes),
+    HttpClientModule, 
+  ],
+  exports: [RouterModule],  
 })
 export class AppRoutingModule { }
