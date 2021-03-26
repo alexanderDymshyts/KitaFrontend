@@ -8,4 +8,8 @@ import { IActuell } from "../../interfaces/actuell";
 })
 export class InfoCardComponent {       
     @Input() public card: IActuell | undefined;
+
+    public createImg(base64String: string) {      
+        return `data:image/png;base64,${base64String}`;
+    } 
 }

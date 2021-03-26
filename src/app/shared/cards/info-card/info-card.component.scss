@@ -1,7 +1,6 @@
 @import '../../../app.component.scss';
 
 .img-fluid{
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../../../assets/img/bunteFarben.png')no-repeat center center;
   background-size: cover;
 }
 
@@ -122,4 +121,15 @@ section .section-title {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+}
+
+.card-text {
+  color: #64485c; 
+  font-size: 20px;   
+}
+
+.card-text-center {
+  text-align: left;
+  color: #64485c; 
+  font-size: 20px;   
 }

@@ -3,5 +3,5 @@ export interface IActuell {
     title: string;
     text: string;
     date: Date;
-    image: string; // Use blob as in profile card
+    image: string; 
 }

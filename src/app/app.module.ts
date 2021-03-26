@@ -25,6 +25,7 @@ import { ErnahrungService } from './ernahrung/ernahrung.service';
 import { TeamService } from './team/team.service';
 import { BaseRequestService } from './shared/services/base-requests.service';
 import { HttpClientModule } from '@angular/common/http';
+import { AktuellesService } from './aktuelles/aktuelles.service';
 
 @NgModule({
   declarations: [    
@@ -51,7 +52,7 @@ import { HttpClientModule } from '@angular/common/http';
     MDBBootstrapModule.forRoot(),
     BrowserAnimationsModule,
   ],
-  providers: [ ErnahrungService, TeamService, BaseRequestService ],
+  providers: [ ErnahrungService, TeamService, BaseRequestService, AktuellesService ],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA],
 })

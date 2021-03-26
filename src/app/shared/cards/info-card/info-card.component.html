@@ -9,9 +9,9 @@
                         <div class="frontside" >
                             <div class="card">
                                 <div class="card-body text-center" >
-                                    <p><img class=" img-fluid"></p>
-                                    <h4 class="card-title">{{card.title}}</h4>
-                                    <a href="#" style=" color: #85dcba; font-size: 15px;"><i class="fa fa-plus"></i> Details</a>
+                                    <p><img [src]="createImg(card.image)" class="img-fluid" alt="Aktuelles"></p>
+                                    <h4 class="card-title">{{card.title}}</h4> 
+                                    <h3 class="card-text">({{card.date | date}})</h3>                                    
                                 </div>
                             </div>
                         </div>
@@ -19,8 +19,7 @@
                             <div class="card">
                                 <div class="card-body text-center mt-4">
                                     <h4 class="card-title">{{card.title}}</h4>
-                                    <p class="card-text" style=" color: #64485c; font-size: 20px; text-align: left;" >{{card.text}}</p>
-                                   
+                                    <p class="card-text-center">{{card.text}}</p>                                   
                                 </div>
                             </div>
                         </div>
