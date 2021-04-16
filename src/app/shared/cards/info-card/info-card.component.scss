@@ -1,12 +1,13 @@
+@import '../../../app.component.scss';
+
 .img-fluid{
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../../assets/img/bunteFarben.png')no-repeat center center;
   background-size: cover;
 }
 
 .btn-primary {
-  color: #64485c;
-  background-color: #85dcba;
-  border-color: #41b3a3;
+  color: $hightlightColor;
+  background-color: $secondaryTextColor;
+  border-color: $backgroundColor;
 }
 
 section {
@@ -15,14 +16,14 @@ section {
 
 section .section-title {
   text-align: center;
-  color: #64485c;
+  color: $hightlightColor;
   margin-bottom: 50px;
   text-transform: uppercase;
 }
 
 #message .card {
   border: none;
-  background:white;
+  background:$cardBackGroundColor;
   width: 320px;
 
 }
@@ -70,7 +71,7 @@ section .section-title {
   position: absolute;
   top: 0;
   left: 0;
-  background:  white;
+  background:  $cardBackGroundColor;
   -webkit-transform: rotateY(-180deg);
   -moz-transform: rotateY(-180deg);
   -o-transform: rotateY(-180deg);
@@ -106,13 +107,13 @@ section .section-title {
 
 .backside .card a {
   font-size: 18px;
-  color: #007b5e !important;
+  color: $cardBacksideColor !important;
 
 }
 
 .frontside .card .card-title,
 .backside .card .card-title {
-  color: #64485c !important;
+  color: $hightlightColor !important;
   font-size: 30px;
 }
 
@@ -122,6 +123,13 @@ section .section-title {
   border-radius: 50%;
 }
 
+.card-text {
+  color: #64485c; 
+  font-size: 20px;   
+}
 
-
-
+.card-text-center {
+  text-align: left;
+  color: #64485c; 
+  font-size: 20px;   
+}

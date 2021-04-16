@@ -18,11 +18,14 @@ import { AussengelandeComponent } from './aussengelande/aussengelande.component'
 import { ErnahrungComponent } from './ernahrung/ernahrung.component';
 import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { InfoCardComponent } from './shared/info-card/info-card.component';
+import { InfoCardComponent } from './shared/cards/info-card/info-card.component';
 import { ImpressumComponent } from './impressum/impressum.component';
-
-
-
+import { ProfileCardComponent } from './shared/cards/profile-card/profile-card.component';
+import { ErnahrungService } from './ernahrung/ernahrung.service';
+import { TeamService } from './team/team.service';
+import { BaseRequestService } from './shared/services/base-requests.service';
+import { HttpClientModule } from '@angular/common/http';
+import { AktuellesService } from './aktuelles/aktuelles.service';
 
 @NgModule({
   declarations: [    
@@ -40,19 +43,16 @@ import { ImpressumComponent } from './impressum/impressum.component';
     LoginComponent,
     InfoCardComponent,
     ImpressumComponent,
+    ProfileCardComponent,
   ],
   imports: [
-    
+    HttpClientModule, 
     BrowserModule,
     AppRoutingModule,
     MDBBootstrapModule.forRoot(),
     BrowserAnimationsModule,
   ],
-  providers: [  
-    HomeComponent,
-    AktuellesComponent,
-    UeberUnsComponent,
-  ],
+  providers: [ ErnahrungService, TeamService, BaseRequestService, AktuellesService ],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA],
 })

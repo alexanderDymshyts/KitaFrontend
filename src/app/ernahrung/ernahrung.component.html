@@ -1,1 +1,108 @@
-<p>ernahrung works!</p>
+    <div class="container nice">
+      <div class="card border-0 shadow">
+        <div class="card-body">
+          
+            <h1 class="display-1 font-italic ml-5 title">Das Essen </h1>
+            <h3 class="text-md-left">                
+                Die Kinder erhalten bei uns drei Mahlzeiten – Frühstück, Mittagessen und eine Brotzeit. Die Nahrungsmittel sind gesund, ausgewogen, vielfältig und saisonal zusammengestellt, ebenso wird darauf geachtet, dass die Kinder möglichst wenig Zucker zu sich nehmen.
+                Das Mittagessen kocht unsere Kinderhausköchin, ebenfalls ausschließlich aus Bio-Kost. Der Mittagstisch wird vom wechselnden Mittagsdienst eingedeckt. Alle Kinder einer Gruppe essen gemeinsam und räumen selbständig ab.
+            </h3>
+                 
+            <h2 class="display-2 font-italic ml-5 title"> Speiseplan </h2>
+
+            <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselIndicators" data-slide-to="4"></li>              
+              </ol>
+             
+              <div class="carousel-inner">
+                <div *ngIf="monday" class="carousel-item active">
+                  <img class="d-block w-100" src="../../assets/img/menu.png" alt="Montag">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1>Montag</h1>
+                    <h2>( {{monday.date | date: 'dd/MM/yyyy'}} )</h2>
+                    <br>
+                    <br>
+                    <h2>Frühstück: {{monday.breakfast}}</h2>
+                    <br>
+                    <h2>Brotzeit: {{monday.snack}}</h2>
+                    <br>
+                    <h2>Mittagessen: {{monday.lunch}}</h2>
+                  </div>
+                </div>
+                <div *ngIf="tuesday" class="carousel-item">
+                  <img class="d-block w-100" src="../../assets/img/menu.png" alt="Dienstag">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1>Dienstag</h1>
+                    <h2>( {{tuesday.date | date: 'dd/MM/yyyy'}} )</h2>
+                    <br>
+                    <br>
+                    <h2>Frühstück: {{tuesday.breakfast}}</h2>
+                    <br>
+                    <h2>Brotzeit: {{tuesday.snack}}</h2>
+                    <br>
+                    <h2>Mittagessen: {{tuesday.lunch}}</h2>
+                  </div>
+                </div>
+                <div class="carousel-item" *ngIf="wednesday">
+                  <img class="d-block w-100" src="../../assets/img/menu.png" alt="Mittwoch">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1>Mittwoch</h1>
+                    <h2>( {{wednesday.date | date: 'dd/MM/yyyy'}} )</h2>
+                    <br>
+                    <br>
+                    <h2>Frühstück: {{wednesday.breakfast}}</h2>
+                    <br>
+                    <h2>Brotzeit: {{wednesday.snack}}</h2>
+                    <br>
+                    <h2>Mittagessen: {{wednesday.lunch}}</h2>
+                  </div>
+                </div>
+                <div class="carousel-item" *ngIf="thursday">
+                  <img class="d-block w-100" src="../../assets/img/menu.png" alt="Donnerstag">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1>Donnerstag</h1>
+                    <h2>( {{thursday.date | date: 'dd/MM/yyyy'}} )</h2>
+                    <br>
+                    <br>
+                    <h2>Frühstück: {{thursday.breakfast}}</h2>
+                    <br>
+                    <h2>Brotzeit: {{thursday.snack}}</h2>
+                    <br>
+                    <h2>Mittagessen: {{thursday.lunch}}</h2>
+                  </div>
+                </div>
+                <div class="carousel-item" *ngIf="friday">                 
+                  <img class="d-block w-100" src="../../assets/img/menu.png" alt="Freitag">     
+                  <div class="carousel-caption d-none d-md-block">
+                    <h1>Freitag</h1>
+                    <h2>( {{friday.date | date: 'dd/MM/yyyy'}} )</h2>
+                    <br>
+                    <br>
+                    <h2>Frühstück: {{friday.breakfast}}</h2>
+                    <br>
+                    <h2>Brotzeit: {{friday.snack}}</h2>
+                    <br>
+                    <h2>Mittagessen: {{friday.lunch}}</h2>
+                  </div>           
+                </div>
+              </div>
+          
+              <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Zurück</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Nächste</span>
+              </a>
+            </div> 
+
+        </div>
+      </div>
+    </div> 
+  
