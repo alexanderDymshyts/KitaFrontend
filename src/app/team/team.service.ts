@@ -9,7 +9,7 @@ export class TeamService {
     constructor(private readonly baseRequestService: BaseRequestService){}
 
     public getKitaTeam$(): Observable<IPersonal[]> {
-         return this.baseRequestService.sendGetRequest$('personal').pipe(
+         return this.baseRequestService.sendGetRequest$('api/personal').pipe(
            map(res => res as IPersonal[])
          );       
     }
