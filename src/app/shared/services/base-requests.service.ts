@@ -8,7 +8,7 @@ import { take } from 'rxjs/operators';
 })
 export class BaseRequestService{
 
-    BACKEND_URL: string = 'http://localhost:8080/';
+    private BACKEND_URL: string = 'http://localhost:8080/';
 
     constructor(private readonly http: HttpClient) {}
 

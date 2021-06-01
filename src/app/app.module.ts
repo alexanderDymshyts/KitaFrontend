@@ -26,24 +26,37 @@ import { TeamService } from './team/team.service';
 import { BaseRequestService } from './shared/services/base-requests.service';
 import { HttpClientModule } from '@angular/common/http';
 import { AktuellesService } from './aktuelles/aktuelles.service';
+import { ImageService } from './shared/services/image.service';
 
+
+const SERVICES = [
+  ErnahrungService, 
+  TeamService, 
+  BaseRequestService, 
+  AktuellesService, 
+  ImageService
+];
+
+const COMPONENTS = [
+  AppComponent,
+  HomeComponent,
+  AktuellesComponent,
+  UeberUnsComponent,
+  FooterComponent,
+  HeaderComponent,
+  DatenschutzComponent,
+  EinrichtungComponent,
+  TeamComponent,
+  AussengelandeComponent,
+  ErnahrungComponent,
+  LoginComponent,
+  InfoCardComponent,
+  ImpressumComponent,
+  ProfileCardComponent,
+]
 @NgModule({
   declarations: [    
-    AppComponent,
-    HomeComponent,
-    AktuellesComponent,
-    UeberUnsComponent,
-    FooterComponent,
-    HeaderComponent,
-    DatenschutzComponent,
-    EinrichtungComponent,
-    TeamComponent,
-    AussengelandeComponent,
-    ErnahrungComponent,
-    LoginComponent,
-    InfoCardComponent,
-    ImpressumComponent,
-    ProfileCardComponent,
+    COMPONENTS
   ],
   imports: [
     HttpClientModule, 
@@ -52,7 +65,7 @@ import { AktuellesService } from './aktuelles/aktuelles.service';
     MDBBootstrapModule.forRoot(),
     BrowserAnimationsModule,
   ],
-  providers: [ ErnahrungService, TeamService, BaseRequestService, AktuellesService ],
+  providers: [ SERVICES ],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA],
 })
