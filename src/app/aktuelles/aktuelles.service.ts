@@ -9,7 +9,7 @@ export class AktuellesService {
     constructor(private readonly baseRequestService: BaseRequestService) {}
 
     public getNews$(): Observable<IActuell[]> {
-        return this.baseRequestService.sendGetRequest$('news').pipe(
+        return this.baseRequestService.sendGetRequest$('api/news').pipe(
             map(res => res as IActuell[])
         );
     }

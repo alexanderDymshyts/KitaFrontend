@@ -5,5 +5,5 @@ export interface IPersonal {
     position: string;
     phone: string;
     email: string;
-    avatar: string;
+    imageId: string;
 }

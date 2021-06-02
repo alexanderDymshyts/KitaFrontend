@@ -1,17 +1,25 @@
 import { Component, Input, OnInit } from "@angular/core";
+import { Observable } from "rxjs";
+import { map } from "rxjs/operators";
 import { IPersonal } from "../../interfaces/personal";
+import { ImageService } from "../../services/image.service";
 @Component({
     selector: 'profile-card',
     templateUrl: './profile-card.component.html',
     styleUrls: ['./profile-card.component.scss'],
 })
 
-export class ProfileCardComponent{
-    @Input() public member: IPersonal | undefined;
+export class ProfileCardComponent implements OnInit{
+    @Input() public worker!: IPersonal;
 
-    constructor(){}         
+    public imageBase64$: Observable<string> | undefined;
+    
+    constructor(private readonly imageService: ImageService){}     
 
-    public createImg(base64String: string) {      
-        return `data:image/png;base64,${base64String}`;
-    }  
+    ngOnInit(): void {
+        console.log('loading profile...');
+         this.imageBase64$ = this.imageService.getImageById(this.worker?.imageId).pipe(
+            map(image => `data:image/png;base64,${image.image}`),
+        );
+    }   
 }

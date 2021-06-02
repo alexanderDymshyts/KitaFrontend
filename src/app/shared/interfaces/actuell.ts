@@ -3,5 +3,5 @@ export interface IActuell {
     title: string;
     text: string;
     date: Date;
-    image: string; 
+    imageId: string; 
 }

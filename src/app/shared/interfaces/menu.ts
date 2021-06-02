@@ -2,7 +2,7 @@ import { WeekDay } from "@angular/common";
 
 export interface IMenu {
     id: string;
-    date: Date;
+    menuDate: Date;
     dayOfTheWeek: WeekDay;
     lunch: string;
     snack: string;

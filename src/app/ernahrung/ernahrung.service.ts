@@ -9,7 +9,7 @@ export class ErnahrungService {
     constructor(private readonly baseRequestService: BaseRequestService) {}
 
     public getWeeklyMenu$(): Observable<IMenu[]> {
-        return this.baseRequestService.sendGetRequest$('weekly-menu').pipe(
+        return this.baseRequestService.sendGetRequest$('api/weekly-menu').pipe(
             map(res => res as IMenu[])
         );
     }
