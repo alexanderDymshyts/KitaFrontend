@@ -1,7 +1,7 @@
 /* To learn more about this file see: https://angular.io/config/tsconfig. */
 
 {
-  "compileOnSave": false,
+  "compileOnSave": true,
   "include": [ "**/*.ts", "../node_modules/angular-bootstrap-md/index.ts" ],
   "compilerOptions": {
     "baseUrl": "./",
@@ -13,7 +13,9 @@
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
-    "experimentalDecorators": true,
+    "experimentalDecorators": true,    
+    "strictPropertyInitialization": false,
+    "skipLibCheck": true,
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
@@ -24,8 +26,8 @@
     ]
   },
   "angularCompilerOptions": {
-    "strictInjectionParameters": true,
-    "strictInputAccessModifiers": true,
+    "strictInjectionParameters": false,
+    "strictInputAccessModifiers": false,
     "strictTemplates": true
   }
 }
