@@ -18,7 +18,7 @@ export class ProfileCardComponent implements OnInit{
 
     ngOnInit(): void {
         console.log('loading profile...');
-         this.imageBase64$ = this.imageService.getImageById(this.worker?.imageId).pipe(
+         this.imageBase64$ = this.imageService.getImageById$(this.worker?.imageId).pipe(
             map(image => `data:image/png;base64,${image.image}`),
         );
     }   

@@ -1,0 +1,20 @@
+@import '../app.component.scss';
+
+h3 {
+    color: $hightlightColor;
+    text-align: center;
+}
+
+h4 {
+    color: $hightlightColor;
+    text-align: left;
+}
+
+hr.dotted {
+    border-top: 3px dotted $hightlightColor;
+}
+
+.container.nice {
+    margin-top: 15px;
+    margin-bottom: 15px;  
+}

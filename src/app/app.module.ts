@@ -33,6 +33,7 @@ import { ChildActivitiesOverviewComponent } from './child-activities-overview/ch
 import { ChildActivityComponent } from './child-activity/child-activity.component';
 import { CreateParentComponent } from './create-parent/create-parent.component';
 import { CreateChildComponent } from './create-child/create-child.component';
+import { ChildrenService } from './shared/services/children.service';
 
 
 const SERVICES = [
@@ -40,7 +41,8 @@ const SERVICES = [
   TeamService, 
   BaseRequestService, 
   AktuellesService, 
-  ImageService
+  ImageService,
+  ChildrenService,
 ];
 
 const COMPONENTS = [

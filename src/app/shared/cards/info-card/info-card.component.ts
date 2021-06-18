@@ -17,7 +17,7 @@ export class InfoCardComponent implements OnInit {
     constructor(private readonly imageService: ImageService){};
     
     ngOnInit(): void {
-        this.imageBase64$ = this.imageService.getImageById(this.card?.imageId).pipe(
+        this.imageBase64$ = this.imageService.getImageById$(this.card?.imageId).pipe(
             map(image => `data:image/png;base64,${image.image}`),
         );
     };    

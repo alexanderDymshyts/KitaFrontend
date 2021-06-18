@@ -7,7 +7,7 @@ import { BaseRequestService } from "./base-requests.service";
 export class ImageService {
     constructor(private readonly baseRequestService: BaseRequestService){};
 
-    public getImageById(id: string): Observable<IImage>{
+    public getImageById$(id: string): Observable<IImage>{
         if(typeof id != 'undefined' && id)
             return this.baseRequestService.sendGetRequest$(`api/image/${id}`);
                    

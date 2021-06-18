@@ -1,1 +1,11 @@
-<p>child-activities-overview works!</p>
+ <div class="container nice">
+    <div class="card border-0 shadow">
+        <div class="card-body">
+            <div *ngIf="children$">
+                <div *ngFor="let child of children$ | async">  
+                    <child-activity [child]="child"></child-activity> 
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>

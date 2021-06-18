@@ -1,18 +1,15 @@
-
-  <div class="container nice">
-    <div class="card border-0 shadow">
-        <div class="card-body">
-
-          <div *ngIf="actuelles$">
-            <h5 class="display-1 font-italic ml-5 title">AKTUELLE NACHRICHTEN</h5>
-            <div class="card-group" >
-            
-              <div *ngFor="let actuell of actuelles$ | async">              
-                <info-card [card]="actuell">
-                </info-card>     
-              </div>
-            </div>        
+<div class="container nice">
+  <div class="card border-0 shadow">
+    <div class="card-body">
+      <div *ngIf="actuelles$">
+        <h5 class="display-1 font-italic ml-5 title">AKTUELLE NACHRICHTEN</h5>
+        <div class="card-group">            
+          <div *ngFor="let actuell of actuelles$ | async">              
+            <info-card [card]="actuell">
+            </info-card>     
           </div>
-        </div>
+        </div>        
+      </div>
+    </div>
   </div> 
 </div>

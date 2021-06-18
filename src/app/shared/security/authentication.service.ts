@@ -39,6 +39,7 @@ export class AuthenticationService{
                     let decodedToken = this.getDecodedAccessToken(token);
                     if( decodedToken !== null){
                         let user: IUser = {
+                            id: decodedToken['id'],
                             email: email,
                             token: token,
                             role: decodedToken['role'],

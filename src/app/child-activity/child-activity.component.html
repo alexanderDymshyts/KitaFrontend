@@ -1,1 +1,18 @@
-<p>child-activity works!</p>
+<div *ngIf="groupActivities$ | async as groupActivities">
+    <div class="container nice">
+        <div class="card border-0 shadow">
+            <div class="card-body">
+                <h3>Ihre Kind: {{child.lastname}} {{child.firstname}}</h3>   
+                <br>
+                <h3>Gruppe: {{groupActivities.groupName}} </h3>
+                <br>
+                <div *ngFor="let activity of groupActivities.activities">                    
+                    <h4>Aktivität: {{activity.name}}; </h4>           
+                    <h4>Datum: {{activity.activityDate | date}}</h4>                   
+                    <h4>Beschreibung: {{activity.description}} </h4>     
+                    <hr class="dotted">               
+                </div>         
+            </div>
+        </div>       
+    </div>   
+</div>
