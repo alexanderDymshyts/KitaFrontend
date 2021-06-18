@@ -1,1 +1,10 @@
 @import '../app.component.scss';
+
+.text-color {
+    color:$hightlightColor;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+}
